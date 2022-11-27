@@ -1,0 +1,41 @@
+
+class Persona  {
+    #edad = 27
+    #nombre = "edel"
+    #telefono = 811    
+
+    get edad () {
+        console.log("geteando")
+        return this.#edad  
+    }
+    get nombre () {
+        console.log("geteando")
+        return this.#nombre 
+    }
+    get telefono () {
+        console.log("geteando")
+        return this.#telefono 
+    } 
+    set edad (nuevaEdad) {
+        this.#edad = nuevaEdad
+    }
+    set nombre (nuevoNombre) {
+        this.#nombre = nuevoNombre              
+    }
+    set telefono(nuevoTelefono){      
+        this.#telefono = nuevoTelefono
+    }
+        
+}
+
+var persona = new Persona
+
+console.log(persona.edad)
+console.log(persona.nombre)
+console.log(persona.telefono)
+
+persona.nuevaEdad = 54
+persona.nuevoNombre = "limbert"
+persona.nuevoTelefono = 118
+
+console.log(persona)
